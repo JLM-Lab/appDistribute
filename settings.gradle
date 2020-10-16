@@ -3,4 +3,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'intranet_app_manager'
+rootProject.name = 'app_dis'
