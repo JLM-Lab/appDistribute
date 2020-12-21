@@ -33,7 +33,7 @@ public class PlistGenerator {
         try {
             //1.0 创建配置对象
             //创建Configuration实例，指定FreeMarker的版本
-            Configuration cfg = new Configuration(Configuration.VERSION_2_3_28);
+            Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);
             //指定模板所在的目录
             cfg.setClassLoaderForTemplateLoading(PlistGenerator.class.getClassLoader(), "/freemarker");
             //设置默认字符集

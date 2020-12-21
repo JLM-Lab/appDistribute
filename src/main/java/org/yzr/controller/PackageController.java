@@ -210,7 +210,7 @@ public class PackageController {
             if (viewModel != null && viewModel.isiOS()) {
                 response.setContentType("application/force-download");
                 response.setHeader("Content-Disposition", "attachment;fileName=manifest.plist");
-                Writer writer = new OutputStreamWriter(response.getOutputStream());
+                Writer writer = new OutputStreamWriter(response.getOutputStream(), StandardCharsets.UTF_8);
                 PlistGenerator.generate(viewModel, writer);
             }
         } catch (Exception e) {
